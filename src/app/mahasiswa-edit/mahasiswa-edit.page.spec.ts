@@ -9,7 +9,7 @@ describe('MahasiswaEditPage', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ MahasiswaEditPage ],
+      declarations: [MahasiswaEditPage],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 

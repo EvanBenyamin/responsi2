@@ -17,4 +17,4 @@ import { MahasiswaEditPage } from './mahasiswa-edit.page';
   ],
   declarations: [MahasiswaEditPage]
 })
-export class MahasiswaEditPageModule {}
+export class MahasiswaEditPageModule { }

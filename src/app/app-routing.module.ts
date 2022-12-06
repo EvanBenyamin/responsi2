@@ -4,20 +4,20 @@ import { AutoLoginGuard } from './guards/auto-login.guard';
 import { AuthGuard } from './guards/auth.guard';
 const routes: Routes = [
   {
-    path: 'mahasiswa',
-    loadChildren: () => import('./mahasiswa/mahasiswa.module').then(m => m.MahasiswaPageModule),
-    canLoad: [AutoLoginGuard],
+    path: 'home',
+    // loadChildren: () => import('./home/home.module').then(m => m.HomePageModule),
+    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule),
+    canLoad: [AuthGuard]
   },
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'mahasiswa',
     pathMatch: 'full'
-    
   },
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then(m => m.LoginPageModule),
-    canLoad: [AuthGuard] // Secure all child pages
+    canLoad: [AutoLoginGuard]
   },
   {
     path: 'mahasiswa',
@@ -32,6 +32,11 @@ const routes: Routes = [
   {
     path: 'mahasiswa-tambah',
     loadChildren: () => import('./mahasiswa-tambah/mahasiswa-tambah.module').then(m => m.MahasiswaTambahPageModule),
+    canLoad: [AuthGuard]
+  },
+  {
+    path: 'folder/:id',
+    loadChildren: () => import('./folder/folder.module').then(m => m.FolderPageModule),
     canLoad: [AuthGuard]
   },
 ];

@@ -1,4 +1,6 @@
-# demo-crud-ionic
-CRUD Menggunakan API PHP, untuk API ada di folder api, bisa menggunakan apache atau nginx untuk webserver phpnya
+# Tugas Kelompok IONIC Auth Login dan CRUD
+Guntur Satya Pramudya H1D020031 
+Deka Royanto H1D020072 
+Bayu Ikhsandi Alfiansyah H1D020093
 
-database menggunakan mysql sudah tersedia di folder api
+Menggunakan 2 database yaitu belajarionic.sql untuk auth login tabel user dan ioniccrudpaki.sql untuk crud tabel mahasiswa 

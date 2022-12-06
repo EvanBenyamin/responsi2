@@ -11,7 +11,6 @@ export class ApiService {
   ) {
 
   }
-
   //link API
   apiURL() {
     return "http://localhost/api";

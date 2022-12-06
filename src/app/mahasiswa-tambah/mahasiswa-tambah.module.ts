@@ -17,4 +17,4 @@ import { MahasiswaTambahPage } from './mahasiswa-tambah.page';
   ],
   declarations: [MahasiswaTambahPage]
 })
-export class MahasiswaTambahPageModule {}
+export class MahasiswaTambahPageModule { }
